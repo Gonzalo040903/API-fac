@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+
+//FUNCION CALLBACK
 const dbconnect = () => {
     mongoose.set('strictQuery', true)
     mongoose.connect("mongodb://127.0.0.1:27017/user-test", {});
@@ -13,4 +15,5 @@ const dbconnect = () => {
     });
 }
 
+//exportar
 module.exports = dbconnect;
